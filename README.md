@@ -59,7 +59,7 @@ By the final review, this README should clearly show:
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
 | `[Munna Madhurima]` | `[Electronics / Coding]` | `[Fabrication / Mechanics]` | `[Developed MicroPython code, integrated ESP32 with sensors and actuators, built and tested obstacle mechanisms, debugged hardware and power issues]` |
-| `[Lara Ruth Pinto]` | `[ Fabrication / Mechanics]` | `[Electronics / Coding ]` | `[Designed visual theme and pirate aesthetics, created props and physical elements, developed layout and user experience, ensured engaging presentation of the maze]` |
+| `[Lara Ruth Pinto]` | `[ Fabrication / Mechanics]` | `[Electronics / Coding ]` | `[Designed visual theme and pirate aesthetics, created props and physical elements, tested obstacle mechanisms, developed layout and user experience, ensured engaging presentation of the maze]` |
 
 ## 1.3 Project Title
 `[Pirate escape maze ]`
@@ -75,8 +75,7 @@ In 1–2 paragraphs, explain:
 - what technologies are involved.
 
 **Response:**  
-`[This project is an interactive pirate-themed escape maze where players progress through a series of physical and logic-based challenges to reach a final treasure. The experience begins with a map-based clue that leads players to decode a two-number passcode using coordinates. Correct input using push buttons activates a servo motor that releases the first clue card. The next challenge involves solving a logic puzzle and using a laser-based “hand cannon” to aim at the correct target; an LDR sensor detects the laser and triggers another servo mechanism to release the next card. Players collect multiple clue cards as they move through the maze.
-The final stage involves matching collected cards with predefined cards on a treasure box using an RFID system. If the correct card is identified, the treasure box opens using a servo motor and plays a pirate-themed audio track; incorrect attempts trigger an error buzzer. Technologies used include an ESP32 microcontroller, push buttons, servo motors, LDR sensor, laser module, RFID reader, buzzer, and audio output.]`
+`[This project is a life-sized pirate treasure hunt played across four Z-boards arranged like a maze. Players move from one obstacle to the next, finding coordinates on maps, targeting the right ship, and finally unlocking a treasure chest using collected cards. The experience mixes simple logic puzzles with physical actions: searching through maps, entering codes, aiming at an enemy ship with laser, and choosing the correct pattern card to place on the chest. Servo-driven reveals, an RFID card reader, and sound feedback (including the Pirates of the Caribbean theme) make each correct action feel like a small win that leads to the final treasure. Technologies used include an ESP32 microcontroller, push buttons, servo motors, LDR sensor, laser module, RFID reader, buzzer, and audio output.]`
 
 ---
 
@@ -102,11 +101,9 @@ Answer the following:
 - Why would someone want to try it again?
 
 **Response:**  
-`[The experience is an interactive pirate-themed escape maze where players solve a sequence of physical and logic-based challenges to progress and unlock a treasure. Each stage is meant to combine storytelling with hands-on interaction, such as decoding clues, pressing buttons, aiming a laser, and matching RFID cards.
-
-The player is meant to feel curiosity, excitement, and a sense of adventure, similar to being on a pirate quest. As they solve each obstacle, they experience satisfaction and anticipation for the next challenge, building engagement throughout the maze.
-
-Players would want to try it again because the experience is fun, immersive, and slightly challenging, encouraging repeated attempts to improve speed, accuracy, or to experience the interactions again with others.]`
+`[1. This is a short, physical treasure hunt where players walk through a set of pirate‑themed boards and solve linked clues to reach a chest.
+2. Curious at the start, slightly tense while solving each step, and satisfied when the chest finally unlocks and the music plays.
+3. They may want to see how fast they can clear all three obstacles, or watch friends struggle on the steps that they solved.]`
 
 ## 2.3 Design Persona
 Complete the sentence below:
@@ -133,7 +130,8 @@ List what inspired the project.
 What makes your project original?
 
 **Response:**  
-`[The project combines multiple types of interactions such as button input, laser targeting, and RFID detection into one continuous escape experience. Instead of using a single game mechanic, players move through different physical and logic based challenges that are connected through a pirate storyline. The use of real world actions like aiming a laser, collecting physical cards, and unlocking a treasure box using RFID creates a more immersive and hands on experience compared to typical screen based games.]`
+`[Instead of one big lock at the end, the “key” for the chest is built up across the whole journey. Players collect physical cards from earlier obstacles, and only one of them will actually unlock the chest.
+The other twist is scale: this is not a board game on a table. Players walk through a mini maze of Z‑boards, aim at enemy ships, and reach into openings for cards, so their whole body is involved, not just their hands.]`
 
 ---
 
@@ -149,14 +147,20 @@ Examples:
 - move object → sensor detects → sound/light response → player reacts
 
 **Response:**  
-`[Observe the clue, solve the puzzle, perform an action such as pressing buttons, aiming the laser, or scanning a card. The system detects the input and responds through movement or sound. The player receives the next clue and continues the process.]`
+`[At each obstacle:
+see a hint, 
+try something in the space, 
+watch what moves or makes sound, 
+collect a card, 
+move on to the next obstacle
+Repeated 2 times, building up to the final chest where all the earlier choices matter.]`
 
 ## 4.2 Intended Player / Audience    
 
 | Question | Response |
 |---|---|
 | Who is this for? | `[Classmates, exhibition visitors, and general audience]` |
-| Age range | `[10 to 18 years, but suitable for older users as well]` |
+| Age range | `[15 to 18 years, but suitable for older users as well]` |
 | Solo or multiplayer | `[Both, can be played individually or in small groups]` |
 | Expected duration of one round | `[3 to 10 minutes]` |
 | What should the player feel? | `[Curiosity, excitement, challenge, and satisfaction]` |
@@ -166,20 +170,20 @@ Examples:
 Describe exactly how a player will use the project.
 
 1. **Approach:** `[The player notices a pirate themed setup with a map and treasure elements that attract attention.]`
-2. **Start:** `[The player reads the first clue on the map and understands that they need to find a passcode.    ]`
-3. **First Action:** `[The player identifies the coordinates clue and presses the correct buttons to input the code.]`
+2. **Start:** `[At the first board, they notice several maps on a table and a short hint about coordinates and “a single number not being enough.” ]`
+3. **First Action:** `[The player identifies the coordinates clue and presses the correct buttons to input the code, giving them a card to take ahead into the maze.]`
 4. **Main Interaction:** `[The player continues solving puzzles, aiming the laser at the correct target, and collecting clue cards while interacting with different obstacles.]`
 5. **System Response:** `[The system responds through servo movements such as card release and box opening, along with sound feedback like buzzer alerts or theme music.]`
-6. **Win / Lose / End Condition:** `[The player wins by selecting the correct RFID card to open the treasure box. Incorrect attempts trigger an error sound.]`
-7. **Reset:** `[The system resets by closing the treasure box, repositioning the cards, and preparing the setup for the next player.]`
+6. **Win / Lose / End Condition:** `[They “win” when they place the correct final card, hear the Pirates of the Caribbean tune, and the chest lid lifts. They “lose” if they never reach that state before time, patience, or a soft time‑limit runs out.]`
+7. **Reset:** `[We reset by putting cards back into their slots, closing the chest, returning the maps, and setting all servos to their starting positions.]`
 
 ## 4.4 Rules of Play
 If your project is a game, list the rules clearly.
 
-- `[- Players must solve each clue in sequence to progress through the maze  ]`
-- `[- Players must interact only with the provided elements such as buttons, laser, and cards ]`
-- `[- Only the correct action will trigger the next stage, incorrect actions will not progress or will give an error response  ]`
-- `[- The game ends when the correct RFID card is used to open the treasure box ]`
+- `[- Players must go through the obstacles in order and cannot skip ahead to the chest.  ]`
+- `[- They should interact only with the provided elements such as buttons, laser, and cards ]`
+- `[- At the ship board, they can only shoot once they unlock the math equation. ]`
+- `[- The chest only unlocks when the correct final card is placed on the RFID sensor; decoy cards will trigger the error buzzer and keep it locked. ]`
 
 ---
 
@@ -188,11 +192,13 @@ If your project is a game, list the rules clearly.
 ## 5.1 Definition of “Playable”
 Your project will be considered complete only if these conditions are met.
 
-- [ ] `All three obstacles work in sequence without breaking  ]`
-- [ ] `[Button input correctly triggers the first servo mechanism ]`
+- [ ] `All three obstacles can be completed in one continuous run without manual fixing in between. ]`
+- [ ] `[Servos consistently provide cards at every obstacle and open the final chest without stalling. ]`
 - [ ] `[Laser detection using LDR correctly triggers the second mechanism  ]`
-- [ ] `[RFID system correctly identifies cards and opens the treasure box]`
-- [ ] `[Sound feedback plays correctly for both success and error conditions  ]`
+- [ ] `[RFID system correctly identifies cards, plays the theme song and opens the treasure box]`
+- [ ] `[The buzzer clearly plays the theme for success and a distinct long tone for errors.]`
+- [ ] `[A first‑time player can finish a round after only a short explanation at the start.]`
+
 
 ## 5.2 Minimum Viable Version
 What is the smallest version of this project that still delivers the core experience?
@@ -308,7 +314,7 @@ Check all that apply.
 Describe the mechanism and what it is meant to do.
 
 **Response:**  
-`[The mechanical system of the project is based on servo motor driven movements to create physical interactions. In the first and second obstacles, servo motors are used to slide out cards when the correct input is detected. This is achieved using simple sliding mechanisms where the servo rotation pushes or releases the card.In the final obstacle, a servo motor is placed inside the treasure box to control the opening and closing of the lid using a hinge mechanism. Additional support elements were used to stabilize the servo and maintain balance inside the box, ensuring smooth and reliable movement.The overall mechanism is simple but effective, focusing on controlled motion and physical feedback. These movements help create a clear cause and effect interaction, making the experience more engaging for the player.]`
+`[The mechanical system of the project is based on servo motor movements that create physical interactions. In the first and second obstacles, servo motors are used to slide out cards when the correct input is detected. This is achieved using simple sliding mechanisms where the servo rotation (360 and 180) pushes or releases the card.In the final obstacle, a servo motor is placed inside the treasure box to control the opening and closing of the lid using a hinge mechanism. Additional support elements were used to stabilize the servo and maintain balance inside the box, ensuring smooth and reliable movement.The overall mechanism is simple but effective, focusing on controlled motion and physical feedback. These movements help create a clear cause and effect interaction, making the experience more engaging for the player.]`
 
 ## 8.3 Motion Planning
 If something moves, explain:
@@ -336,7 +342,7 @@ If your project includes mechanical motion, document the digital planning before
 What changed after the CAD, animation, or simulation stage?
 
 **Response:**  
-`[After initial testing and prototyping, several changes were made to improve stability and functionality. The positioning of servo motors was adjusted to ensure proper movement, and additional support elements were added inside the treasure box to maintain balance. The circuit setup was divided into two systems with a buck converter used for the later stages to provide stable power. The placement of sensors and components was also refined to improve accuracy and user interaction.]`
+`[After initial testing and prototyping, several changes were made to improve stability and functionality. The positioning of servo motors was adjusted to ensure proper movement, and additional support elements were added inside the treasure box to maintain balance. The circuit setup was divided into two systems with a buck converter used for the later stages to provide stable power as 2 servo motors and an RFID card reader were operating on the same breadboard. The placement of sensors and components was also refined to improve accuracy and user interaction.]`
 
 ---
 
