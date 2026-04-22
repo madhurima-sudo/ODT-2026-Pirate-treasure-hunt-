@@ -76,7 +76,7 @@ In 1–2 paragraphs, explain:
 
 **Response:**  
 `[This project is an interactive pirate-themed escape maze where players progress through a series of physical and logic-based challenges to reach a final treasure. The experience begins with a map-based clue that leads players to decode a two-number passcode using coordinates. Correct input using push buttons activates a servo motor that releases the first clue card. The next challenge involves solving a logic puzzle and using a laser-based “hand cannon” to aim at the correct target; an LDR sensor detects the laser and triggers another servo mechanism to release the next card. Players collect multiple clue cards as they move through the maze.
-The final stage involves matching collected cards with predefined cards on a treasure box using an RFID system. If the correct card is identified, the treasure box opens using a servo motor and plays a pirate-themed audio track; incorrect attempts trigger an error buzzer. The project creates a playful, immersive, and problem-solving experience by combining storytelling, physical interaction, and electronics. Technologies used include an ESP32 microcontroller, push buttons, servo motors, LDR sensor, laser module, RFID reader, buzzer, and audio output.]`
+The final stage involves matching collected cards with predefined cards on a treasure box using an RFID system. If the correct card is identified, the treasure box opens using a servo motor and plays a pirate-themed audio track; incorrect attempts trigger an error buzzer. Technologies used include an ESP32 microcontroller, push buttons, servo motors, LDR sensor, laser module, RFID reader, buzzer, and audio output.]`
 
 ---
 
@@ -102,7 +102,7 @@ Answer the following:
 - Why would someone want to try it again?
 
 **Response:**  
-`[The experience is an interactive pirate-themed escape maze where players solve a sequence of physical and logic-based challenges to progress and unlock a treasure. Each stage combines storytelling with hands-on interaction, such as decoding clues, pressing buttons, aiming a laser, and matching RFID cards.
+`[The experience is an interactive pirate-themed escape maze where players solve a sequence of physical and logic-based challenges to progress and unlock a treasure. Each stage is meant to combine storytelling with hands-on interaction, such as decoding clues, pressing buttons, aiming a laser, and matching RFID cards.
 
 The player is meant to feel curiosity, excitement, and a sense of adventure, similar to being on a pirate quest. As they solve each obstacle, they experience satisfaction and anticipation for the next challenge, building engagement throughout the maze.
 
