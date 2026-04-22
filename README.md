@@ -327,7 +327,10 @@ If your project includes mechanical motion, document the digital planning before
 | Tool Used | File / Link | What Was Tested |
 |---|---|---|
 | `[Procreate, Illustrator, Photoshop]` | `[Design files]` | `[Visual layout, poster design, and overall theme planning]` |
-| `[Manual prototyping for obstacles]` | `[<img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/a0ebf58c-efa0-4377-bb0b-6ad8e723a7eb" /> <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/775d0bc8-38b2-4d3f-9db7-f71543b7ca9b" /> ]` | `[Tested circuit connections, sensor responses, and servo behavior before final setup]` |
+
+
+
+| `[Manual prototyping for obstacles]` |[ <img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/ccf278fe-937a-46ad-8260-b500184a8ed2" /> <img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/f5d4259c-eefd-4b5d-bf8b-3c3d732b4973" />  <img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/9f6e3452-f732-4f3b-95e3-9a7ddcfe730f" /> ] | `[Tested circuit connections, sensor responses, and servo behavior before final setup]` |
 
 ## 8.5 Changes After Digital Testing
 What changed after the CAD, animation, or simulation stage?
@@ -417,7 +420,11 @@ Suggested sequence:
 - error handling.
 
 **Insert image below:**  
-`[<img width="831" height="425" alt="image" src="https://github.com/user-attachments/assets/8d46283d-1160-49b8-a273-91a4d76cbf0f" /> <img width="734" height="393" alt="image" src="https://github.com/user-attachments/assets/9e606d50-a7de-477a-9e24-b82b96ff4fa8" />]` 
+
+[<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/f5c4330b-ade4-4c7d-a24e-2441fbabfd6f" />
+<img width="865" height="453" alt="image" src="https://github.com/user-attachments/assets/73d580fd-1c2a-48f0-8e8f-64db6f722910" />]
+
+
 
 `[Initialize all components including ESP32, servo motors, LDR sensor, RFID reader, and buzzer
 Wait for input
