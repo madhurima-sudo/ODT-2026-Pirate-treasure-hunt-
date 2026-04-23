@@ -375,7 +375,8 @@ Describe the main electrical connections.
 Insert a hand-drawn or software-made circuit diagram.
 
 **Insert image below:**  
-`[Upload image and link here]`
+[ <img width="2480" height="3508" alt="obstacle 1 circuit" src="https://github.com/user-attachments/assets/bb7cd715-f570-4909-a7b7-9b3cea788bd9" /> <img width="2480" height="3508" alt="obstacle 2 and 3 circuit" src="https://github.com/user-attachments/assets/60e973e6-b04c-4b31-9698-5f7f5a78a919" /> ]
+
 
 ## 9.4 Power Plan
 
