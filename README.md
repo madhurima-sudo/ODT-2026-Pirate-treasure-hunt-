@@ -263,8 +263,8 @@ Include:
 Add an early sketch of the full idea.
 
 **Insert image below:**  
-`[Upload image and link here]`
-
+`[ <img width="979" height="731" alt="image" src="https://github.com/user-attachments/assets/41fb306f-2743-431e-a21f-86249ae8293e" /> ]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 Example:
 ```md
 
@@ -279,7 +279,8 @@ Add a sketch with labels showing:
 - output elements.
 
 **Insert image below:**  
-`[Upload image and link here]`
+<img width="1536" height="2048" alt="Untitled_Artwork" src="https://github.com/user-attachments/assets/a3f521a2-d083-4a43-b510-dce4c76f07ff" />
+
 
 ## 7.3 Approximate Dimensions
 
